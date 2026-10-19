@@ -1,0 +1,420 @@
+{
+ "PARKING": [
+  {
+   "id": "thingvellir",
+   "name": "Þingvellir",
+   "aliases": [
+    "thingvellir",
+    "þingvellir",
+    "thingvallavatn",
+    "hakid",
+    "hakið"
+   ],
+   "lat": 64.2559,
+   "lon": -21.1295,
+   "operator": "Parka",
+   "type": "daily",
+   "price_isk": 1000,
+   "price_status": "óstaðfest",
+   "source": null
+  },
+  {
+   "id": "gullfoss",
+   "name": "Gullfoss",
+   "aliases": [
+    "gullfoss",
+    "golden falls"
+   ],
+   "lat": 64.3271,
+   "lon": -20.1199,
+   "operator": "Parka",
+   "type": "daily",
+   "price_isk": 1000,
+   "price_status": "óstaðfest",
+   "source": null
+  },
+  {
+   "id": "geysir",
+   "name": "Geysir",
+   "aliases": [
+    "geysir",
+    "geyser",
+    "strokkur"
+   ],
+   "lat": 64.3104,
+   "lon": -20.3024,
+   "operator": "Parka",
+   "type": "daily",
+   "price_isk": 1000,
+   "price_status": "óstaðfest",
+   "source": null
+  },
+  {
+   "id": "seljalandsfoss",
+   "name": "Seljalandsfoss",
+   "aliases": [
+    "seljalandsfoss",
+    "seljalands"
+   ],
+   "lat": 63.6156,
+   "lon": -19.9886,
+   "operator": "Parka",
+   "type": "daily",
+   "price_isk": 1000,
+   "price_status": "óstaðfest",
+   "source": null
+  },
+  {
+   "id": "skogafoss",
+   "name": "Skógafoss",
+   "aliases": [
+    "skogafoss",
+    "skógafoss",
+    "skogar"
+   ],
+   "lat": 63.5321,
+   "lon": -19.5114,
+   "operator": "Parka",
+   "type": "daily",
+   "price_isk": 1000,
+   "price_status": "óstaðfest",
+   "source": null
+  },
+  {
+   "id": "reynisfjara",
+   "name": "Reynisfjara",
+   "aliases": [
+    "reynisfjara",
+    "black sand beach",
+    "vik beach"
+   ],
+   "lat": 63.4044,
+   "lon": -19.045,
+   "operator": "Parka",
+   "type": "daily",
+   "price_isk": 1000,
+   "price_status": "óstaðfest",
+   "source": null
+  },
+  {
+   "id": "jokulsarlon",
+   "zone": "vatnajokull-breidamerkursandur",
+   "name": "Jökulsárlón",
+   "aliases": [
+    "jokulsarlon",
+    "jökulsárlón",
+    "glacier lagoon"
+   ],
+   "lat": 64.0484,
+   "lon": -16.1795,
+   "operator": "Parka",
+   "type": "daily",
+   "price_isk": 1000,
+   "price_status": "óstaðfest",
+   "source": null
+  },
+  {
+   "id": "diamond",
+   "zone": "vatnajokull-breidamerkursandur",
+   "name": "Diamond Beach (Breiðamerkursandur)",
+   "aliases": [
+    "diamond beach",
+    "breidamerkursandur",
+    "demantsströnd"
+   ],
+   "lat": 64.0447,
+   "lon": -16.1777,
+   "operator": "Parka",
+   "type": "daily",
+   "price_isk": 1000,
+   "price_status": "óstaðfest",
+   "source": null
+  },
+  {
+   "id": "skaftafell",
+   "name": "Skaftafell",
+   "aliases": [
+    "skaftafell",
+    "svartifoss"
+   ],
+   "lat": 64.0161,
+   "lon": -16.9661,
+   "operator": "Checkit",
+   "type": "daily",
+   "price_isk": 1000,
+   "price_status": "óstaðfest",
+   "source": null
+  },
+  {
+   "id": "landmannalaugar",
+   "name": "Landmannalaugar",
+   "aliases": [
+    "landmannalaugar",
+    "laugar"
+   ],
+   "lat": 63.9917,
+   "lon": -19.0603,
+   "operator": "Checkit",
+   "type": "daily",
+   "price_isk": 1000,
+   "price_status": "óstaðfest",
+   "source": null
+  },
+  {
+   "id": "kerid",
+   "name": "Kerið",
+   "aliases": [
+    "kerid",
+    "kerið",
+    "kerid crater"
+   ],
+   "lat": 64.0414,
+   "lon": -20.885,
+   "operator": "Landeigandi (aðgangseyrir)",
+   "type": "daily",
+   "price_isk": 600,
+   "price_status": "óstaðfest",
+   "source": null
+  },
+  {
+   "id": "fjadrargljufur",
+   "name": "Fjaðrárgljúfur",
+   "aliases": [
+    "fjadrargljufur",
+    "fjaðrárgljúfur",
+    "fjadra canyon"
+   ],
+   "lat": 63.7712,
+   "lon": -18.1718,
+   "operator": "Parka",
+   "type": "daily",
+   "price_isk": 1000,
+   "price_status": "óstaðfest",
+   "source": null
+  },
+  {
+   "id": "dyrholaey",
+   "name": "Dyrhólaey",
+   "aliases": [
+    "dyrholaey",
+    "dyrhólaey"
+   ],
+   "lat": 63.4022,
+   "lon": -19.13,
+   "operator": "Parka",
+   "type": "daily",
+   "price_isk": 1000,
+   "price_status": "óstaðfest",
+   "source": null
+  },
+  {
+   "id": "kef",
+   "name": "Keflavíkurflugvöllur (KEF)",
+   "aliases": [
+    "keflavik airport",
+    "keflavík",
+    "kef",
+    "flugvöllur",
+    "airport",
+    "flughafen"
+   ],
+   "lat": 63.985,
+   "lon": -22.6056,
+   "operator": "Isavia",
+   "type": "hourly",
+   "price_isk": 750,
+   "cap_hours": 24,
+   "price_status": "óstaðfest",
+   "source": null
+  },
+  {
+   "id": "p1",
+   "name": "Reykjavík miðbær P1",
+   "aliases": [
+    "p1",
+    "laugavegur",
+    "downtown",
+    "miðbær",
+    "centre",
+    "center"
+   ],
+   "lat": 64.146,
+   "lon": -21.93,
+   "operator": "Bílastæðasjóður (EasyPark/Parka app)",
+   "type": "hourly",
+   "price_isk": 690,
+   "cap_hours": 10,
+   "price_status": "óstaðfest",
+   "source": null
+  },
+  {
+   "id": "p2",
+   "name": "Reykjavík P2",
+   "aliases": [
+    "p2"
+   ],
+   "lat": 64.144,
+   "lon": -21.925,
+   "operator": "Bílastæðasjóður (EasyPark/Parka app)",
+   "type": "hourly",
+   "price_isk": 330,
+   "cap_hours": 10,
+   "price_status": "óstaðfest",
+   "source": null
+  },
+  {
+   "id": "p3",
+   "name": "Reykjavík P3",
+   "aliases": [
+    "p3"
+   ],
+   "lat": 64.142,
+   "lon": -21.92,
+   "operator": "Bílastæðasjóður (EasyPark/Parka app)",
+   "type": "hourly",
+   "price_isk": 220,
+   "cap_hours": 10,
+   "price_status": "óstaðfest",
+   "source": null
+  },
+  {
+   "id": "p4",
+   "name": "Reykjavík P4",
+   "aliases": [
+    "p4"
+   ],
+   "lat": 64.14,
+   "lon": -21.915,
+   "operator": "Bílastæðasjóður (EasyPark/Parka app)",
+   "type": "hourly",
+   "price_isk": 220,
+   "cap_hours": 10,
+   "price_status": "óstaðfest",
+   "source": null
+  },
+  {
+   "id": "harpa",
+   "name": "Harpa (bílakjallari)",
+   "aliases": [
+    "harpa",
+    "concert hall"
+   ],
+   "lat": 64.1505,
+   "lon": -21.9327,
+   "operator": "Harpa/Bílastæðasjóður",
+   "type": "hourly",
+   "price_isk": 500,
+   "cap_hours": 12,
+   "price_status": "óstaðfest",
+   "source": null
+  },
+  {
+   "id": "hallgrimskirkja",
+   "name": "Hallgrímskirkja",
+   "aliases": [
+    "hallgrimskirkja",
+    "hallgrímskirkja",
+    "church"
+   ],
+   "lat": 64.1417,
+   "lon": -21.9266,
+   "operator": "Bílastæðasjóður (EasyPark/Parka app)",
+   "type": "hourly",
+   "price_isk": 690,
+   "cap_hours": 10,
+   "price_status": "óstaðfest",
+   "source": null
+  },
+  {
+   "id": "kirkjufell",
+   "name": "Kirkjufell",
+   "aliases": [
+    "kirkjufell",
+    "kirkjufellsfoss"
+   ],
+   "lat": 64.926,
+   "lon": -23.311,
+   "operator": "Parka",
+   "type": "daily",
+   "price_isk": 1000,
+   "price_status": "óstaðfest",
+   "source": null
+  },
+  {
+   "id": "hraunfossar",
+   "name": "Hraunfossar",
+   "aliases": [
+    "hraunfossar",
+    "barnafoss"
+   ],
+   "lat": 64.7027,
+   "lon": -20.9775,
+   "operator": "Parka",
+   "type": "daily",
+   "price_isk": 1000,
+   "price_status": "óstaðfest",
+   "source": null
+  },
+  {
+   "id": "dettifoss",
+   "name": "Dettifoss",
+   "aliases": [
+    "dettifoss"
+   ],
+   "lat": 65.8146,
+   "lon": -16.3846,
+   "operator": "Checkit",
+   "type": "daily",
+   "price_isk": 1000,
+   "price_status": "óstaðfest",
+   "source": null
+  },
+  {
+   "id": "myvatn",
+   "name": "Mývatn (Hverir)",
+   "aliases": [
+    "myvatn",
+    "mývatn",
+    "hverir",
+    "namaskard"
+   ],
+   "lat": 65.6413,
+   "lon": -16.809,
+   "operator": "Checkit",
+   "type": "daily",
+   "price_isk": 1000,
+   "price_status": "óstaðfest",
+   "source": null
+  }
+ ],
+ "TOLLS": [
+  {
+   "id": "vadla",
+   "name": "Vaðlaheiðargöng",
+   "aliases": [
+    "vadlaheidargong",
+    "vaðlaheiðargöng",
+    "vadlaheidi",
+    "tunnel akureyri"
+   ],
+   "price_isk": 2216,
+   "price_status": "óstaðfest (skv. Claude)",
+   "pay": "veggjald.is (innan 24 klst.)",
+   "mode": "register"
+  },
+  {
+   "id": "horna",
+   "name": "Hornafjarðarfljót (veggjald frá 1.9.2026)",
+   "aliases": [
+    "hornafjordur",
+    "hornafjörður",
+    "hornafjardarfljot",
+    "höfn bridge"
+   ],
+   "price_isk": 1500,
+   "price_status": "óstaðfest (skv. Claude: stök ferð, undir 3,5 t)",
+   "pay": "sjálfvirk myndavélainnheimta, mánaðarlega á skráðan eiganda (bílaleiguna)",
+   "mode": "auto"
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+node_modules/
+package-lock.json
+a*.py
+build.py
+nofine.html
+q.txt
+package.json
