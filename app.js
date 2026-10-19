@@ -37,7 +37,7 @@ function chips(last){
  c.querySelectorAll(".chip").forEach(b=>b.onclick=()=>say(b.textContent));}
 function say(text,meta={}){me(text||"",meta.location);meta.driver=cur;out(B.handle(st,text,meta));}
 function reset(){st=B.newState({plate:"LT-731",renter:"Driver 1"});cur="Driver 1";$("chat").innerHTML='<div class="day"><span>Today</span></div>';typingDelay=0;out(B.start(st));}
-function kpi(v,k,badge){return `<div class="kpi"><div class="v">${v}</div><div class="k">${k}${badge?` <span class="badge">${badge}</span>`:""}</div></div>`;}
+function kpi(v,k,badge,cls){return `<div class="kpi ${cls||""}"><div class="v">${v}</div><div class="k">${k}${badge?` <span class="badge">${badge}</span>`:""}</div></div>`;}
 const KIND={parking:["Dagsstæði","b"],street:["Götustæði","g"],toll:["Veggjald","y"]};
 function refresh(){
  $("drv").innerHTML=st.drivers.map(d=>`<option ${d===cur?"selected":""}>${esc(d)}</option>`).join("");
@@ -53,7 +53,7 @@ function refresh(){
  const sessions=rows.flatMap(r=>r.fees.map(f=>`<tr><td><span class="plate">${esc(r.plate)}</span></td><td>${esc(f.name)}</td><td><span class="tagx ${KIND[f.kind][1]}">${KIND[f.kind][0]}${f.capped?" · hámark":""}</span></td><td class="r">${f.amount==null?"óstaðfest":fmt(f.amount)+" kr."}</td><td>${esc(f.receipt||"–")}${r.demo?' <span class="badge">hermt</span>':""}</td></tr>`)).join("");
  $("dash").innerHTML=`
  <div class="dh"><div><h2>Mælaborð bílaleigu</h2><div class="s">Lotus Car Rental · október 2026</div></div><span class="badge live">Uppfærist í rauntíma</span></div>
- <div class="kpis">${kpi(rows.length,"Virkir bílar/passar","2 hermt")}${kpi(allFees.length,"Greidd stæði/gjöld")}${kpi(fmt(total)+" kr.","Á lokareikninga")}${kpi(prevented,"Kröfur forðaðar","áætlun")}${kpi(0,"Kröfur borist","hermt")}${kpi(rows.reduce((a,r)=>a+r.gaps,0),"Óþekkt stæði (göt)")}</div>
+ <div class="kpis">${kpi(rows.length,"Virkir bílar/passar","2 hermt")}${kpi(allFees.length,"Greidd stæði/gjöld")}${kpi(fmt(total)+" kr.","Á lokareikninga",null,"money")}${kpi(prevented,"Kröfur forðaðar","áætlun","money")}${kpi(0,"Kröfur borist","hermt")}${kpi(rows.reduce((a,r)=>a+r.gaps,0),"Óþekkt stæði (göt)")}</div>
  <div class="sec"><h3>Virkir bílar</h3><div class="tbl"><table><tr><th>Bílnúmer</th><th>Leigjandi/ökumenn</th><th>Tímabil</th><th class="r">Á lokareikning</th><th>Staða</th></tr>
  ${rows.map(r=>`<tr><td><span class="plate">${esc(r.plate)}</span>${r.demo?' <span class="badge">hermt</span>':""}</td><td>${esc(r.renter)}</td><td class="nw">${esc(r.from)} – ${esc(r.to)}</td><td class="r">${fmt(sum(r))} kr.</td><td>${status(r)}${r.damage?' <span class="tagx y">Tjón tilkynnt</span>':""}</td></tr>`).join("")}</table></div></div>
  <div class="sec"><h3>Stæði og gjöld eftir leigu</h3><div class="tbl"><table><tr><th>Bíll</th><th>Staður</th><th>Tegund</th><th class="r">Upphæð</th><th>Kvittun</th></tr>${sessions}</table></div></div>
@@ -84,7 +84,7 @@ $("drv").onchange=e=>cur=e.target.value;
 $("photo").onchange=e=>{const f=[...e.target.files].map(x=>x.name);if(f.length)say("📷 "+f.join(", "),{photos:f});e.target.value="";};
 $("returnBtn").onclick=()=>say(st.lang==="is"?"skila":st.lang==="de"?"Rückgabe":"return");
 $("reset").onclick=reset;
-const root=document.documentElement,saved=(()=>{try{return localStorage.getItem("nf-theme")}catch(e){return null}})();if(saved)root.dataset.theme=saved;
-$("theme").onclick=()=>{root.dataset.theme=root.dataset.theme==="dark"?"light":"dark";try{localStorage.setItem("nf-theme",root.dataset.theme)}catch(e){}};
+const root=document.documentElement,saved=(()=>{try{return localStorage.getItem("nf-theme2")}catch(e){return null}})();if(saved)root.dataset.theme=saved;
+$("theme").onclick=()=>{root.dataset.theme=root.dataset.theme==="dark"?"light":"dark";try{localStorage.setItem("nf-theme2",root.dataset.theme)}catch(e){}};
 reset();
 })();
